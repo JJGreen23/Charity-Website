@@ -31,12 +31,16 @@ $("#form").submit(function (e) {
     })
 });
 
-let userCharitydatasaved = '';
+let userCharitydatasaved = [];
 
 let saveUserData = (event) => {
     event.preventDefault();
 
-    let userCharitydata = document.getElementById("charityuserInput").value
+    let userCharitydata = {
+
+        Charity: document.getElementById("charityuserInput").value,
+
+    }
 
     userCharitydatasaved.push(userCharitydata);
 
