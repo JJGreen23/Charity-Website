@@ -5,11 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Feel Good Website</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
    <div>
        <h1 id = "Header">The Feel Good Website</h1>
        <p id = "aboutWebsite">Do you wanna feel good about yourself? We've browsed the internet and picked some of the best charities, and foundations for you to donate to! Read about them and just click and then donate!</p>
+   </div>
+
+   <div>
+        <form>
+            <div class = "dataInput">
+                <label for="charityInput">Save what charity you donated to for next time!</label>
+
+                <input type="text" id= "charityuserInput">
+            </div>
+            <div class = "dataInput">
+                <button id = "btn">Click to Save!</button>
+            </div>
+            <div>
+                <ul id = "userSavedList"> You donated to this charity last!</ul>
+            </div>
+        </form>
    </div>
     
    <div>
@@ -18,7 +35,7 @@
         <p id = "dateFounded1" class = "wikiInfo">History: "The Alzheimer’s Association was founded in 1980 by a group of family caregivers and individuals who recognized the need for an organization that would unite caregivers, provide support to those facing Alzheimer’s and advance research into the disease. 
             Today, the Association reaches millions of people affected by Alzheimer's and all other dementia. We are the leading voluntary health organization in Alzheimer's care, support and research."
         </p>
-        <a href="https://act.alz.org/site/Donation2?df_id=32112&32112.donation=form1&_gl=1*onnld4*_ga*MTA2MTczOTYyNy4xNjIyNjgwMzY2*_ga_9JTEWVX24V*MTYyMjY4MDM2Ni4xLjAuMTYyMjY4MDM2Ni4w&_ga=2.49574821.2013362818.1622680366-1061739627.1622680366" target="_blank" class = "links">Alzheimers Association Donation Link</a>
+        <a href="https://act.alz.org/site/Donation2?df_id=32112&32112.donation=form1&_gl=1*onnld4*_ga*MTA2MTczOTYyNy4xNjIyNjgwMzY2*_ga_9JTEWVX24V*MTYyMjY4MDM2Ni4xLjAuMTYyMjY4MDM2Ni4w&_ga=2.49574821.2013362818.1622680366-1061739627.1622680366" target="_blank" class = "links" id = "donationLinks">Alzheimers Association Donation Link</a>
    </div>
    <div>
         <h2 class = "foundationName">American Humane</h2> 
@@ -26,61 +43,62 @@
         <p id = "dateFounded2" class = "wikiInfo">Charities misson: "American Humane is committed to ensuring the safety, welfare and well-being of animals.
             For more than a hundred years American Humane has been first in promoting the welfare and safety of animals and strengthening the bond between animals and people."
         </p>
-        <a href="https://www.americanhumane.org/?form=MakeADifference" target="_blank" class = "links">American Humane Donation Link</a>
+        <a href="https://www.americanhumane.org/?form=MakeADifference" target="_blank" class = "links" id = "donationLinks">American Humane Donation Link</a>
    </div>
     <div>
         <h2 class = "foundationName">Prevent Child Abuse</h2> 
         <p id = "definitions3" class = "definitions">One of the leading child abuse charities.</p>
         <p id = "dateFounded3" class = "wikiInfo">What they do: "Our dedicated team works hard every day to prevent child abuse and neglect before it happens. Collectively, we create, interpret, and distribute innovative research on new and existing child abuse prevention solutions and develop a wide range of valuable tools for parents and caregivers. We also advocate for meaningful change at the national, state, and local levels and raise awareness of supportive programs that help children and families in communities across the country."</p>
-        <a href="https://preventchildabuse.org/donate/" target="_blank" class = "links">Prevent Child Abuse Link</a>
+        <a href="https://preventchildabuse.org/donate/" target="_blank" class = "links" id = "donationLinks">Prevent Child Abuse Link</a>
    </div>
    <div>
         <h2 class = "foundationName">Leukemia & Lymphoma Society</h2> 
         <p id = "leukemiaDef" class = "definitions">Definition</p>
         <p id = "lymphomaDef" class = "definitions">Definition</p>
         <p id = "dateFounded4" class = "wikiInfo">About: "The Leukemia & Lymphoma Society is at the forefront of the fight to cure cancer. We are the largest nonprofit dedicated to creating a world without blood cancers. Since 1949, we’ve invested nearly $1.3 billion in groundbreaking research, pioneering many of today’s most innovative approaches."</p>
-        <a href="https://donate.lls.org/lls/donate" target="_blank" class = "links">Leukemia & Lymphoma Society Donation Link</a>
+        <a href="https://donate.lls.org/lls/donate" target="_blank" class = "links" id = "donationLinks">Leukemia & Lymphoma Society Donation Link</a>
     </div>
     <div>
         <h2 class= "foundationName">Cancer Research Institute</h2> 
         <p id = "cancerDef" class = "definitions">Definition</p>
         <p id = "dateFounded5" class = "wikiInfo">About: "We are the Cancer Research Institute, a 501(c)(3) nonprofit organization dedicated to harnessing our immune system's power to control and potentially cure all types of cancer. We fund the most innovative clinical and laboratory research around the world, support the next generation of the field's leaders, and serve as the trusted source of information on immunotherapy for cancer patients and their caregivers."</p>
-        <a href="https://www.cancerresearch.org/join-the-cause/donate/one-time-donation" target="_blank" class = "links">Cancer Research Institute Donation Link</a>
+        <a href="https://www.cancerresearch.org/join-the-cause/donate/one-time-donation" target="_blank" class = "links" id = "donationLinks">Cancer Research Institute Donation Link</a>
    </div>
    <div>
         <h2 class = "foundationName">Operation USA</h2> 
         <p id = "definitions6" class = "definitions">One of the leading disaster relief charities.</p>
         <p id = "dateFounded6" class = "wikiInfo">"Every day, we strive to meet the needs of under-served and overlooked populations so that future generations may have the tools they need to create meaningful change in their own communities and lives. Working with partners around the world, we empower communities to recover, build resiliency and thrive in the face of pervasive obstacles during a time of unprecedented global need."</p>
-        <a href="https://give.opusa.org/give/34510/#!/donation/checkout" target="_blank" class = "links">Operation USA Donation Link</a>
+        <a href="https://give.opusa.org/give/34510/#!/donation/checkout" target="_blank" class = "links" id = "donationLinks">Operation USA Donation Link</a>
     </div>
     <div>
         <h2 class = "foundationName">National Alliance to End Homelessness</h2> 
         <p id = "definitions7" class = "definitions">One of the leading organizations commited to end homelessness.</p>
         <p id = "dateFounded7" class = "wikiInfo">Mission: "The National Alliance to End Homelessness is a nonpartisan organization committed to preventing and ending homelessness in the United States."</p>
-        <a href="https://help.endhomelessness.org/donate/" target="_blank" class = "links">National Alliance to End Homelessness Donation Link</a>
+        <a href="https://help.endhomelessness.org/donate/" target="_blank" class = "links" id = "donationLinks">National Alliance to End Homelessness Donation Link</a>
     </div>
     <div>
         <h2 class = "foundationName">Fistula Foundation</h2> 
         <p id = "fistulaDef" class = "definitions">Definition</p>
         <p id = "dateFounded8" class = "wikiInfo">About: "Fistula Foundation is the global leader in fistula treatment, providing more surgeries to more women than any other organization, including the U.S. government and United Nations."</p>
-        <a href="https://fistulafoundation.org/donate/" target="_blank" class = "links">Fistula Foundation Donation Link</a>
+        <a href="https://fistulafoundation.org/donate/" target="_blank" class = "links" id = "donationLinks">Fistula Foundation Donation Link</a>
     </div> 
     <div>
         <h2 class = "foundationName">Heart Support</h2> 
         <p id = "definitions9" class = "definitions">One of the most hands on mental health support charitites.</p>
         <p id = "dateFounded9" class = "wikiInfo">Mission: "Every year we help men and women brave their wounds, find purpose, and discover healing. Our goal is to create a legacy of life-transformation, freeing them from suicide, addiction, abuse, and mental health issues while empowering them with the realization they are loved unconditionally and supported by a community that believes in them."</p>
-        <a href="https://heartsupport.com/donate/" target="_blank" class = "links">Heart Support Donation Link</a>
+        <a href="https://heartsupport.com/donate/" target="_blank" class = "links" id = "donationLinks">Heart Support Donation Link</a>
     </div>
     <div>
         <h2 class = "foundationName">Foundation for AIDS Research(amfAR)</h2> 
         <p id = "definitions10" class = "definitions">Definition</p>
         <p id = "dateFounded10" class = "wikiInfo">About: "The Foundation for AIDS Research, is one of the world’s leading nonprofit organizations dedicated to the support of AIDS research, HIV prevention, treatment education, and advocacy. Since 1985, amfAR has invested nearly $600 million in its programs and has awarded more than 3,500 grants to research teams worldwide."</p>
-        <a href="https://secure.amfar.org/site/Donation2?df_id=2844&mfc_pref=T&2184.donation=form1&_ga=2.219151385.1094460734.1622683368-685259129.1622683368&NONCE_TOKEN=7D0C13DCA08C8E5E570E02E6C0829D5F&2844.donation=form1" target="_blank" class = "links">Foundation for AIDS Research(amfAR) Donation Link</a>
+        <a href="https://secure.amfar.org/site/Donation2?df_id=2844&mfc_pref=T&2184.donation=form1&_ga=2.219151385.1094460734.1622683368-685259129.1622683368&NONCE_TOKEN=7D0C13DCA08C8E5E570E02E6C0829D5F&2844.donation=form1" target="_blank" class = "links" id = "donationLinks">Foundation for AIDS Research(amfAR) Donation Link</a>
     </div>
     <div>
         <h3 class = "usersList">You have visited these foundations!</h3>
-        <ul>hypothetical list</ul>
-        <ul>hypothetical list</ul>
+        <div id = "userHistory">
+
+        </div>
     </div>
 
     <div>

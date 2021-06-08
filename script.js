@@ -31,3 +31,32 @@ $("#form").submit(function (e) {
     })
 });
 
+let userCharitydatasaved = [];
+
+let saveUserData = (event) => {
+    event.preventDefault();
+
+    let userCharitydata = {
+        
+        Charity: document.getElementById("charityuserInput").value,
+
+    }
+
+    userCharitydatasaved.push(userCharitydata);
+
+    document.forms[0].reset();
+
+    localStorage.setItem('savedUserData',JSON.stringify(userCharitydatasaved));
+
+}
+
+var savedList = document.getElementById('userSavedList');
+
+var li = document.createElement('li').innerHTML =  localStorage.getItem('savedUserData');
+
+savedList.append(li)
+
+
+document.addEventListener('DOMContentLoaded', ()=>{
+    document.getElementById('btn').addEventListener('click',saveUserData);
+})
