@@ -18,7 +18,7 @@ $("#form").submit(function (e) {
         console.log(data);
 
         data.organic_results.forEach(res => {
-            
+
             result = `
             
                 <h4>${res.title}</h4><a href="${res.url}">${res.url}</a>
@@ -31,16 +31,12 @@ $("#form").submit(function (e) {
     })
 });
 
-let userCharitydatasaved = [];
+let userCharitydatasaved = '';
 
 let saveUserData = (event) => {
     event.preventDefault();
 
-    let userCharitydata = {
-        
-        Charity: document.getElementById("charityuserInput").value,
-
-    }
+    let userCharitydata = document.getElementById("charityuserInput").value
 
     userCharitydatasaved.push(userCharitydata);
 
