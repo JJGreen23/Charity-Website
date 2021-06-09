@@ -2,8 +2,6 @@ body{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: rgb(33, 44, 94);
     background-color: rgb(255, 255, 255);
-   
-    
 }
 
 .container {
@@ -131,4 +129,9 @@ footer{
     justify-content: center;
     background-color: rgb(53, 20, 26);
     color: white;
+}
+
+.searchURL {
+    display: flex;
+    justify-content: center;
 }

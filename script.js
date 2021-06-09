@@ -3,7 +3,7 @@ $("#form").submit(function (e) {
 
     var query = $("#searchBar").val();
 
-    var API_KEY1 = '8ff98b40c11551781da7775b1f612864'
+    var API_KEY1 = '8ff98b40c11551781da7775b1f612864';
 
     var result = '';
 
@@ -21,10 +21,10 @@ $("#form").submit(function (e) {
 
             result =`
             
-                <h4>${res.title}</h4><a href="${res.url}">${res.url}</a>
+                <h4>${res.title}</h4><a href="${res.url}" class = "searchURL">${res.url}</a>
             
             `
-            $("#searchResults").append(result)
+            $("#searchResults").append(result);
 
         });
 
@@ -49,15 +49,12 @@ var savedList = document.getElementById('userSavedList');
 
 var li = document.createElement('li').innerHTML + localStorage.getItem('savedUserData');
 
-savedList.append(li)
-
+savedList.append(li);
 
 document.addEventListener('DOMContentLoaded', ()=>{
     document.getElementById('btn').addEventListener('click',saveUserData);
 })
 
-// These code snippets use an open-source library. http://unirest.io/nodejs
-// https://rapidapi.com/dpventures/api/wordsapi/
 const settings = {
     "async": true,
     "crossDomain": true,
@@ -75,7 +72,7 @@ $.ajax(settings).done(function (data) {
 
     alzdef.innerHTML = 'Definition:  ' + data.results[0].definition + '.';
     
-    console.log(data)
+    console.log(data);
 }); 
 
 const settings2 = {
@@ -95,7 +92,7 @@ $.ajax(settings2).done(function (data) {
 
     fistuladef.innerHTML = 'Definition:  ' + data.results[0].definition + '.';
 
-    console.log(data)
+    console.log(data);
     
 }); 
 
@@ -114,9 +111,9 @@ $.ajax(settings3).done(function (data) {
 
     const lukDef = document.getElementById('leukemiaDef');
 
-    lukDef.innerHTML = 'Definition:  ' + data.results[0].definition + '.';
+    lukDef.innerHTML = 'Leukemia Definition:  ' + data.results[0].definition + '.';
 
-    console.log(data)
+    console.log(data);
     
 }); 
 
@@ -135,9 +132,9 @@ $.ajax(settings4).done(function (data) {
 
     const lymdef = document.getElementById('lymphomaDef');
 
-    lymdef.innerHTML = 'Definition:  ' + data.results[0].definition; + '.'
+    lymdef.innerHTML = 'Lymphoma Definition:  ' + data.results[0].definition; + '.'
 
-    console.log(data)
+    console.log(data);
     
 }); 
 
@@ -179,6 +176,6 @@ $.ajax(settings6).done(function (data) {
 
     aidsdef.innerHTML = 'Definition:  ' + data.results[0].definition + '.';
 
-    console.log(data)
+    console.log(data);
     
 }); 
