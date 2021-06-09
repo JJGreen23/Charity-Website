@@ -24,10 +24,10 @@
             <div class = "dataInput">
                 <label for="charityInput">Save what charity you donated to for next time!</label>
 
-                <input type="text" id= "charityuserInput">
+                <input type="text" id= "charityuserInput" class = "form-control">
             </div>
             <div class = "dataInput">
-                <button id = "btn">Click to Save!</button>
+                <button id = "btn" >Click to Save!</button>
             </div>
             <div>
                 <ul id = "userSavedList">You donated to this charity last!  </ul>
@@ -96,17 +96,11 @@
     </div>
     <div>
         <h2 class = "foundationName">Foundation for AIDS Research(amfAR)</h2> 
-        <p id = "definitions10" class = "definitions">Definition</p>
+        <p id = "aidsDef" class = "definitions">Definition</p>
         <p id = "dateFounded10" class = "wikiInfo">About: "The Foundation for AIDS Research, is one of the world’s leading nonprofit organizations dedicated to the support of AIDS research, HIV prevention, treatment education, and advocacy. Since 1985, amfAR has invested nearly $600 million in its programs and has awarded more than 3,500 grants to research teams worldwide."</p>
         <a href="https://secure.amfar.org/site/Donation2?df_id=2844&mfc_pref=T&2184.donation=form1&_ga=2.219151385.1094460734.1622683368-685259129.1622683368&NONCE_TOKEN=7D0C13DCA08C8E5E570E02E6C0829D5F&2844.donation=form1" target="_blank" class = "links" id = "donationLinks">Foundation for AIDS Research(amfAR) Donation Link</a>
     </div>
-    <div>
-        <h3 class = "usersList">You have visited these foundations!</h3>
-        <div id = "userHistory">
-
-        </div>
-    </div>
-
+  
     <div>
         <h2>Cant find the foundation you're looking for?</h2>
         <h4>No worries! Feel free to use our searchbar to find one!</h4>
@@ -125,5 +119,6 @@
     
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src = "http://unirest.io/nodejs"></script>
 <script src="script.js"></script>
 </html>

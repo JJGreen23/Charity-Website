@@ -2,30 +2,46 @@ body{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: rgb(33, 44, 94);
     background-color: rgb(255, 255, 255);
-
-
+   
+    
 }
 
-img.hands {
-    width: 200px;
+.container {
     display: flex;
-    justify-content: start;
     flex-direction: row;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
-img.coin {
+img{
     width: 200px;
+}
+
+.dataInput{
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+label{
     display: flex;
     justify-content: center;
-    flex-direction: row;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-img.family{
-    width: 200px;
-    display: flex;
-    flex-direction: row;
+ul#userSavedList{
+    font-size: 3em;
+    font-style: italic;
+    color: red;
 }
 
+button{
+    display: block;
+    margin: auto;
+}
 
 p#aboutWebsite { 
     display: flex;
@@ -52,7 +68,7 @@ p {
 p1 {
     font-size: 1.3em;
     display: flex;
-    justify-content: center;
+    justify-content: center;  
 }
 
 
@@ -63,9 +79,10 @@ h1 {
     flex-wrap: wrap;
     font-size: 4em;
     font-weight: bold;
+    text-shadow: 6px 6px black;
+    color: rgb(255, 255, 255);
     background-color: rgb(53, 20, 26);
-    color: rgb(255, 255, 255)
-
+    
 
 }
 
@@ -109,15 +126,9 @@ ul {
     justify-content: center;
 }
 
-footer {
+footer{
     display: flex;
     justify-content: center;
     background-color: rgb(53, 20, 26);
     color: white;
-}
-
-.container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
 }
