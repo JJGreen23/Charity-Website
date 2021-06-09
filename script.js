@@ -73,7 +73,7 @@ $.ajax(settings).done(function (data) {
 
     const alzdef = document.getElementById('alzheimerDef');
 
-    alzdef.innerHTML = data.results[0].definition;
+    alzdef.innerHTML = 'Definition:  ' + data.results[0].definition + '.';
     
     console.log(data)
 }); 
@@ -93,7 +93,7 @@ $.ajax(settings2).done(function (data) {
 
     const fistuladef = document.getElementById('fistulaDef');
 
-    fistuladef.innerHTML = data.results[0].definition;
+    fistuladef.innerHTML = 'Definition:  ' + data.results[0].definition + '.';
 
     console.log(data)
     
@@ -114,7 +114,7 @@ $.ajax(settings3).done(function (data) {
 
     const lukDef = document.getElementById('leukemiaDef');
 
-    lukDef.innerHTML = data.results[0].definition;
+    lukDef.innerHTML = 'Definition:  ' + data.results[0].definition + '.';
 
     console.log(data)
     
@@ -135,7 +135,7 @@ $.ajax(settings4).done(function (data) {
 
     const lymdef = document.getElementById('lymphomaDef');
 
-    lymdef.innerHTML = data.results[0].definition;
+    lymdef.innerHTML = 'Definition:  ' + data.results[0].definition; + '.'
 
     console.log(data)
     
@@ -156,7 +156,7 @@ $.ajax(settings5).done(function (data) {
 
     const cancerDef = document.getElementById('cancerDef');
 
-    cancerDef.innerHTML = data.results[3].definition;
+    cancerDef.innerHTML = 'Definition:  ' + data.results[3].definition + '.';
 
     console.log(data)
     
@@ -177,7 +177,7 @@ $.ajax(settings6).done(function (data) {
 
     const aidsdef = document.getElementById('aidsDef');
 
-    aidsdef.innerHTML = data.results[0].definition;
+    aidsdef.innerHTML = 'Definition:  ' + data.results[0].definition + '.';
 
     console.log(data)
     
